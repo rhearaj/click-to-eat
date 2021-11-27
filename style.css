@@ -1,0 +1,128 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-face: "Courier New";
+  font-family: 'Noto Sans JP', sans-serif;
+font:bold;
+}
+body {
+  background-color: #F3F7F0;
+}
+img {
+  text-align: center;
+  max-width: 50%;
+  height: auto;
+  border-radius: 8px;
+  opacity: 0.8;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 50%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: wrap;
+  color: white;
+  font-size: 19px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.hero-image{
+  background-image: linear-gradient(rgba(0,0,0,0.5)rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.com/49942fd6-8561-4ea6-8fa3-ae13fbe5cd82%2Fbrooke-lark-08bOYnH_r_E-unsplash.jpg?v=1584629945136"));
+  height: 50%;
+  background-poistion: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text{
+  text-align: center;
+  postion: absolute;
+  top: 50%;
+  left: 50%;
+  transform:(-50%,-50%);
+  color: white;
+}
+
+.hero-text-button{
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: blue;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+img:hover {
+  transform: scaleX(-1);
+}
+p {
+  font-family: "Kulim Park", sans-serif;
+  font-color: 
+}
+
+.right
+
+{float: right; }
+
+.left
+
+{float: left; }
+
+img.resize {
+  width:600px;
+}
+
+.cites {
+	display: flex;
+justify-content: space-around;
+}
+
+.main-message {
+  background-image: url("assets/GWC!.png");
+  font-size: 30px;
+  text-align: center;
+}
+
