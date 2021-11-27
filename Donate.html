@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!Sunset Orange - #F2545B>
+<!English Red - #A93F55>
+<!Yankees Blue - #19323C>
+<!White Smoke - #F3F7F0>
+<!Rose Taupe - #8C5E58>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<html lang="en">
+  <head>
+    <title>Donate</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <center>
+      <img
+        src="https://cdn.glitch.com/49942fd6-8561-4ea6-8fa3-ae13fbe5cd82%2Fdonate.png?v=1584717346040"
+        height="100"
+      />
+    </center>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <br />
+  </head>
+
+  <body>
+    
+      <script src="https://button.glitch.me/button.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-messaging.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+  <script src="script.js"></script>
+    <center>
+      <p>
+        <font face="Courier" color="#A93F55">
+          Thank you for choosing to Donate food! To proceed, please enter your
+          information in the boxes below.
+          <br />
+        </font>
+      </p>
+    </center>
+    <form action="/action_page.php">
+      
+      
+      
+        <font face="Courier New" color="#A93F55">
+          Donor Organization Name
+        </font>
+      
+      <br>
+      
+      <input type="text" id="Organization" name="Organization" />
+      <br>
+      <br>
+      
+      <br>
+      <br>
+      
+        <font face="Courier New" color="#A93F55">
+          Address
+        </font>
+      <br>
+      <input type="text" id="address" name="address" />
+      
+      <br>
+      <br />
+      <br />
+      <br />
+      
+      
+        <font face="Courier New" color="#A93F55">
+          Phone Number
+        </font>
+      <br>
+      <input type="text" id="phone-number" name="phone-number" />
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      
+      
+        <font face="Courier New" color="#A93F55">
+          Email
+        </font>
+      
+      <br>
+      
+      <input type="text" id="emaildonate" name="email" /> <br />
+
+      <br />
+
+      <form action="/action_page.php" method="get">
+
+        
+
+ 
+<font face="Courier" color="#A93F55">      
+<h2> Food </h2>
+        </font>
+    
+    <p>
+        If you are not donating a certain food, please enter 0 for the pounds. Remember, please enter ONLY THE NUMBER in pounds.
+      </font>
+      </p>
+
+        
+        
+      <h4><font face="Courier New" color="#A93F55">
+      Fruits (in lbs)
+         </h4>
+   <input type="text"  id="Fruits"/>
+        
+    <h4>
+      Vegetables (in lbs)
+    </h4>
+   <input type="text"  id="Vegetables"/>
+        
+      <h4>
+      Dairy (in lbs)
+    </h4>
+   <input type="text"  id="Dairy"/>
+        
+      <h4>
+      Grains (in lbs)
+    </h4>
+        
+    <input type="text"  id="Grains"/>
+        
+      <h4>
+      Meat and Poultry (in lbs)
+    </h4>
+        
+    <input type="text"  id="MeatandPoultry"/>
+        
+      <h4>
+      Nuts(in lbs)
+    </h4>
+    
+    <input type="text"  id="Nuts"/>
+        
+      <h4>
+      Lentils (in lbs)
+    </h4>
+    <input type="text"  id="Lentils"/>
+        
+      <h4>
+      Seafood(in lbs)
+    </h4>
+    <input type="text"  id="Seafood"/>
+     
+    
+      
+      
+      
+      <br>
+      <br>
+        
+
+    <font face="Courier New" color="#A93F55">
+          If you selected 'Other', please type in the food you would like to donate below. If not, please type in "None".
+        </font>
+      
+      <br /><br />
+      <input type="text" id="Other"/><br />
+      <br />
+      <br />
+      <br />
+            
+    
+    
+   
+    <h3>
+      Please select your preferred form of transportation.
+    </h3>
+        
+    <form>
+      
+    
+   <label><input type="radio" name="FT1" value="UseLiveToEatVehicle" id="FormTransport"/>Use Live To Eat Vehicle</label>
+  
+  
+    <label><input type="radio" name="FT1" value="UsePersonalVehicle" id="FormTransport" /> Use my own vehicle</label>
+  
+    <h3>
+      Please enter the amount of vehicles you will require if you are using Live To Eat vehicles. If you are using your own vehicle, type in 0.
+    </h3>
+    
+    <input type="text" id="NumberofVehicles"/>
+    
+    <br>
+    <br>
+      
+    
+      <br>
+      <br>
+      <br>
+    <input class= "submit" type="button" id="Submit" value="Submit" onclick="FormSubmission()"/>
+    
+  </form>
+        
+        
+        
+      
+        
+        
+        
+        
+  
+    
+      <br />
+      <br />
+      <a href="index.html" target="_blank"
+        ><img
+          src="https://cdn.glitch.com/49942fd6-8561-4ea6-8fa3-ae13fbe5cd82%2FScreen%20Shot%202020-03-21%20at%2012.22.38%20PM.png?v=1584807802568"
+        width="100"
+      />
+     
+        
+    </a>
+  </body>
+
+  <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+  <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+
+</html>
